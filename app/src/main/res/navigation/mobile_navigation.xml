@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.petclub.ui.Home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_CadatroPet"
+        android:name="com.example.petclub.ui.CadastroPet.CadastroPetFragment"
+        android:label="Cadastro Pet"
+        tools:layout="@layout/fragment_cadastropet" />
+
+    <fragment
+        android:id="@+id/nav_pets"
+        android:name="com.example.petclub.ui.Pets.PetsFragment"
+        android:label="Pets"
+        tools:layout="@layout/fragment_pets" />
+
+    <fragment
+        android:id="@+id/nav_config"
+        android:name="com.example.petclub.ui.Config.ConfigFragment"
+        android:label="Configurações"
+        tools:layout="@layout/fragment_config" />
+
+</navigation>
